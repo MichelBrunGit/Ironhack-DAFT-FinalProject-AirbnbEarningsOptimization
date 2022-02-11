@@ -34,9 +34,10 @@ from pathlib import Path
 #requirement.txt file to be put on github (add, commit and push)
 #transform local path to online path
 #local path
-data = pd.read_csv(r"C:\Users\Michel\git2\Ironhack-DAFT-FinalProject-AirbnbEarningsOptimization\Data\detailed_listings_paris_clean.csv")
+#data = pd.read_csv(r"C:\Users\Michel\git2\Ironhack-DAFT-FinalProject-AirbnbEarningsOptimization\Data\detailed_listings_paris_clean.csv")
 #online path
-#file = pd.read_csv(r"/app/ironhack-daft-project5-data_visualization_and_reporting_in_streamlit/Python/bank_loans_clean_with_encoding.csv")
+dat = pd.read_csv(r"/app/ironhack-daft-finalproject-airbnbearningsoptimization/main/Data/detailed_listings_paris_clean.csv")
+
 
 
 
@@ -67,7 +68,7 @@ with col1:
     st.write("")
 
 with col2:
-    image1 = Image.open(r"C:\Users\Michel\git2\Ironhack-DAFT-FinalProject-AirbnbEarningsOptimization\Images\airbnb_logo.png")
+    image1 = Image.open(r"/app/ironhack-daft-finalproject-airbnbearningsoptimization/main/Images/airbnb_logo.png")
     st.image(image1, use_column_width=True)
     st.markdown("<h1 style='text-align: center; color: '#000000'>Earnings Optimization in Paris</h1>", unsafe_allow_html=True)
     #st.title("Earnings Optimization in Paris") 
@@ -244,7 +245,7 @@ with col1:
     st.write("")
 
 with col2:
-    image2 = Image.open(r"C:\Users\Michel\git2\Ironhack-DAFT-FinalProject-AirbnbEarningsOptimization\Images\airbnb_name_wordcloud.png")
+    image2 = Image.open(r"/app/ironhack-daft-finalproject-airbnbearningsoptimization/main/Images/airbnb_name_wordcloud.png")
     st.image(image2, use_column_width=True)
     st.markdown("")
 
@@ -262,7 +263,7 @@ with col1:
     st.write("")
 
 with col2:
-    image3 = Image.open(r"C:\Users\Michel\git2\Ironhack-DAFT-FinalProject-AirbnbEarningsOptimization\Images\airbnb_amenities_wordcloud.png")
+    image3 = Image.open(r"/app/ironhack-daft-finalproject-airbnbearningsoptimization/main/Images/airbnb_amenities_wordcloud.png")
     st.image(image3, use_column_width=True)
     st.markdown("")
     st.markdown("")
